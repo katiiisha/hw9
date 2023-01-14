@@ -14,9 +14,10 @@ h1 {
 .calc {
     text-align: center;
     width: 500px;
-    height: 350px;
+    height: 400px;
     border: 10px solid #ffffff;
     padding: 20px;
+    background-color: rgb(145, 203, 184);
 }
 input {
     height: 40px;
@@ -51,6 +52,7 @@ button#divide:active {
     background-color: #f4b4f7;
 }
 button {
+    
     margin-top: 20px;
     width: 250px;
     height: 40px;
@@ -62,6 +64,12 @@ button {
 }
 button:active {
 background-color: #f4b4f7;
+}
+p {
+    height: 24px;
+}
+.clr {
+    margin-top: 10px;
 }
 #result {
     font-size: x-large

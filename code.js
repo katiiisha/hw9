@@ -4,10 +4,10 @@ var op;
 // функция расчёта
 function calculator() {
     // переменная для результата
-    var result;
+    let result;
     // получаем первое и второе число
-    var num1 = Number(document.getElementById("num1").value);
-    var num2 = Number(document.getElementById("num2").value);
+    let num1 = Number(document.getElementById("num1").value);
+    let num2 = Number(document.getElementById("num2").value);
     // делаем расчеты опираясь на то, что запомнила переменная ор
     switch (op) {
         case '+':
@@ -23,7 +23,12 @@ function calculator() {
             result = num1 / num2;
             break;
     }
-
     // отправляем результат на страницу
     document.getElementById("result").innerHTML = result;
+}
+//как я поняла эта функция не имеет доступа к значениям переменных calculator, поэтому была идея найти элементы по id на стр и записать пустую строку, но как можно заметить, она не сработала 
+function clear() {
+    document.getElementById("result").innerHTML = '';
+    document.getElementById("num1").innerHTML = '';
+    document.getElementById("num2").innerHTML = '';
 }
