@@ -1,0 +1,68 @@
+body {
+    background-color: rgb(158, 236, 210);
+    font-family: 'Press Start 2P';
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    padding-top: 15px;
+    padding-bottom: 20px;
+    text-align: center;
+    font-family: 'Press Start 2P';
+}
+.calc {
+    text-align: center;
+    width: 500px;
+    height: 350px;
+    border: 10px solid #ffffff;
+    padding: 20px;
+}
+input {
+    height: 40px;
+    width: 300px;
+    padding-bottom: 20px;
+    font-size: x-large;
+    font-family: 'Press Start 2P';
+}
+#minus, #plus, #times, #divide {
+    font-family: 'Press Start 2P';
+    width: 50px;
+    height: 50px;
+    /* border-radius: 5px; */
+    font-size: x-large;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+    margin-left: 10px;
+    background-color: white;
+}
+button#minus:active {
+background-color: #f4b4f7;
+}
+button#plus:active {
+    background-color: #f4b4f7;
+}
+button#times:active {
+    background-color: #f4b4f7;
+}
+button#divide:active {
+    background-color: #f4b4f7;
+}
+button {
+    margin-top: 20px;
+    width: 250px;
+    height: 40px;
+    border-radius: 12px;
+    background-color: white;
+    border: 3px solid #f4b4f7;
+    font-size: x-large;
+    font-family: 'Press Start 2P';
+}
+button:active {
+background-color: #f4b4f7;
+}
+#result {
+    font-size: x-large
+}
