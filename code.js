@@ -27,8 +27,8 @@ function calculator() {
     document.getElementById("result").innerHTML = result;
 }
 //как я поняла эта функция не имеет доступа к значениям переменных calculator, поэтому была идея найти элементы по id на стр и записать пустую строку, но как можно заметить, она не сработала 
-function clear() {
+function clearAll() {
     document.getElementById("result").innerHTML = '';
-    document.getElementById("num1").innerHTML = '';
-    document.getElementById("num2").innerHTML = '';
+    document.getElementById("num1").value = '';
+    document.getElementById("num2").value = '';
 }
